@@ -1,0 +1,370 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Spartan", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Global Styles */
+
+h1 {
+  font-size: 50px;
+  line-height: 64px;
+  color: #222;
+}
+
+h2 {
+  font-size: 46px;
+  line-height: 54px;
+  color: #222;
+}
+
+h4 {
+  font-size: 20px;
+  color: #222;
+}
+
+h6 {
+  font-weight: 700;
+  font-size: 12px;
+}
+
+p {
+  font-size: 16px;
+  color: #465b52;
+  margin: 15px 0 20px 0;
+}
+
+.section-p1 {
+  padding: 40px 80px;
+}
+
+.section-m1 {
+  margin: 40px 0;
+}
+
+body {
+  width: 100%;
+}
+
+/* هذ الجزء مخصص برأس الصفحة*/
+#header{
+  
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 80px;
+  background: #ff3a3a;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+  z-index: 999;
+  position: sticky;
+  top: 0;
+  left: 0;
+
+}
+
+
+/* هذ الجزء مخصص بتقسيم رأس الصفحة*/
+
+#navbar{
+display: flex;
+align-items:center ;
+justify-content: center;
+
+}
+
+#header a .logo{
+width: 15%;
+margin: 0 0 0 0;
+
+
+
+}
+
+/* هذ الجزء مخصص بلوجو رأس الصفحة
+
+
+#img{
+  list-style: none;
+  padding: -20px -50px -30px 10px;
+
+}*/
+
+/* هذ الجزء مخصص بتباعد بين نصوص رأس الصفحة*/
+
+#navbar li{
+list-style: none;
+padding: 0 20px;
+position: relative;
+
+}
+
+/* هذ الجزء مخصص بنصوص برأس الصفحة*/
+#navbar li a {
+text-decoration: none;
+font-size: 16px;
+font-weight: 900;
+color: aliceblue;
+
+transition: 0.3s ease-in-out;
+
+
+}
+
+#navbar li a:hover,
+#navbar li a.active {
+color: rgb(37, 37, 37);
+background-color: #ffffff; 
+padding: 5px 5px 5px 5px;
+border-radius: 5px;
+
+
+
+} 
+
+
+/*#navbar li a.active::after,
+#navbar li a:hover::after {
+  content: "";
+  width: 25%;
+  height: 3px;
+  background: rgb(37, 37, 37);
+  position: absolute;
+  bottom:  -10px;
+  left: 20px;
+
+} */
+
+
+
+/* الصفحة الرئيسية هذا الجزء خاص بالبانر*/
+
+#Signboard{
+background-image: url("img/slider/slider-5.png");
+height: 60vh;
+width: 100%;
+background-size: cover;
+background-position: top 10% right 0;
+padding: 0 80px;
+display: flex;
+flex-direction:column;
+align-items: flex-start;
+justify-content: center;
+
+}
+#Signboard{
+  background-image: url("img/slider/slider-4.png");
+}
+
+#Signboard h2 {
+     padding-bottom: 15px;
+     
+
+}
+
+#Signboard h1{
+color: #ff3a3a;
+
+}
+
+#Signboard p{
+font-size: 20px;
+
+}
+
+
+#Signboard button{
+background-color: #ff3a3a;
+color: white;
+font-size: 30px;
+font-weight: bold;
+padding: 5px 10px;
+border: #ff3a3a;
+border-radius: 10px;
+background-repeat: no-repeat;
+cursor: pointer;
+
+
+}
+
+/* الصفحة الرئيسية هذا الجزء خاص المميزات */
+
+#feature{
+  background-image: url(img/banner/banner-10.png);
+  height: 200px;
+  width: 100%;
+  margin: 35px 0 0 0;
+  display: flex;
+  align-items: center;
+  justify-content:space-evenly;
+  flex-wrap: wrap;
+}
+
+#feature .fe-box{
+  background-color: rgb(255, 255, 255);
+  width: 150px;
+  text-align: center;
+  padding: 20px 15px ;
+  box-shadow: 20px  20px 34px rgba(0.10, 0.10, 0.10, 0.10);
+  border: 1px  solid #c5ffd2;
+  border-radius: 10px  ;
+  margin: -33px 0 0 0;
+
+
+}
+
+#feature h6{
+  display: inline-block;
+  font-size: 13px;
+  padding: 9px 8px 6px 8px;
+  line-height: 1;
+  border-radius: 4px;
+  color: #202020;
+  background-color: #ffc2c2;
+}
+
+
+#feature .fe-box:hover{
+box-shadow: 10px 10px 55px rgba(70, 62, 221, 0.06);
+
+
+}
+
+#feature .fe-box img{
+   width: 100%;
+   margin-bottom: 20px;
+    
+  
+}
+
+#Product1 {
+  text-align: center;
+  
+
+}
+
+
+#Product1 .Pro-container{
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  flex-wrap: wrap;
+
+
+}
+/* الصفحة الرئيسية هذا الجزء خاص بالمنتجات */
+
+
+#Product1 .Pro {
+  width: 23%;
+  min-width: 250px ;
+  padding: 10px 12px ;
+  border: 1px solid #ffcaca;
+  border-radius: 25px;
+  cursor: pointer;
+  box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+  margin: 15px 0;
+  transition: 0.2s ease;
+  position: relative;
+
+
+}
+
+#Product1 .Pro:hover{
+  box-shadow: 20px 20px 30px rgba(0.06, 0.06, 0.06, 0.06);
+}
+
+
+#Product1 .Pro img {
+  width: 100%;
+  border-radius: 15px 15px 0 0;
+
+
+
+}
+#Product1 .Pro .des {
+   text-align: start;
+   padding: 10px 0;
+
+
+}
+
+#Product1 .Pro .des span{
+  color: #2b2b2b;
+  font-size: 13px;
+  background-color: #ffd5d5;
+  padding: 5px 10px 2px 10px ;
+  border-radius: 15px;
+
+
+
+}
+
+
+#Product1 .Pro .des h5{
+  padding-top: 7px;
+  color: #202020;
+  font-size: 14px;
+
+}
+
+
+#Product1 .Pro .des i {
+  font-size: 12px;
+  color: #ff3a3a;
+  margin-top: 5px;
+}
+
+
+#Product1 .Pro .des h4 {
+  font-size:18px;
+  font-weight: bold;
+  color: #202020;
+  margin-top: 10px;
+  width: 60px;
+  height: 20px;
+  line-height: 25px;
+  border-radius: 10px;
+  background-color: #ffaeae;
+  text-align: center;
+  margin-top: 10px ;
+
+}
+#Product1 .Pro .cart {
+  width: 60px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 10px;
+  background-color: #b5ffda;
+  color: #000000;
+  position: absolute;
+  bottom: 20px ;
+  right: 10px;
+
+
+}
+
+#Product1 .Pro .cart:hover{
+  background-color:#ff5f5f;
+  color: #ffffff;
+  border: 1px solid;
+
+
+}
+
+
+#banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background-image: url("img/banner/b16.jpg");
+
+
+}
